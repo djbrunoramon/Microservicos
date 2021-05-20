@@ -50,7 +50,7 @@ public class AuthApplication {
 		admin.setAccountNonLocked(true);
 		admin.setCredentialsNonExpired(true);
 		admin.setEnabled(true);
-		admin.setPassword(passwordEncoder.encode("123456"));
+		admin.setPassword(passwordEncoder.encode("bruno"));
 		admin.setPermissions(Arrays.asList(permission));
 
 		User find = userRepository.findByUserName("bruno");
